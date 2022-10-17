@@ -1,6 +1,6 @@
-package customers;
+package customer;
 
-import groups.Group;
+import group.Group;
 
 import java.util.Objects;
 
@@ -90,13 +90,13 @@ public class Customer implements Comparable<Customer> {
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "{" +
                 "SerialNumber='" + SerialNumber + '\'' +
-                ", name='" + name + '\'' +
-                ", id='" + id + '\'' +
-                ", useTime=" + useTime +
-                ", totalPayment=" + totalPayment +
-                ", group=" + group +
+                ", 이름='" + name + '\'' +
+                ", 아이디='" + id + '\'' +
+                ", 총 이용 시간=" + useTime +
+                ", 총 결제 금액=" + totalPayment +
+                ", 그룹=" + group +
                 '}';
     }
 
