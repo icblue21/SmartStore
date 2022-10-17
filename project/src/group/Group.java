@@ -1,4 +1,6 @@
-package groups;
+package group;
+
+import customer.Customers;
 
 import java.util.Objects;
 
@@ -32,6 +34,9 @@ public class Group {
         this.param = param;
     }
 
+    public Customers getCustomers(Customers customers){
+        return customers.findAllCustomers(this);
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -47,9 +52,9 @@ public class Group {
 
     @Override
     public String toString() {
-        return "Group{" +
-                "type=" + type +
-                ", param=" + param +
+        return "{" +
+                "등급=" + type +
+                ", 분류 기준=" + param +
                 '}';
     }
 }

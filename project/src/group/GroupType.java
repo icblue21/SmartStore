@@ -1,4 +1,4 @@
-package groups;
+package group;
 
 public enum GroupType {
     NONE("비회원"),

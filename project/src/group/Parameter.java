@@ -1,4 +1,4 @@
-package groups;
+package group;
 
 import java.util.Objects;
 
@@ -6,6 +6,8 @@ public class Parameter {
 
     private int minimumUseTime;
     private int minimumTotalPayment;
+
+    public Parameter(){}
 
     public Parameter(int minimumUseTime, int minimumTotalPayment) {
         this.minimumUseTime = minimumUseTime;
