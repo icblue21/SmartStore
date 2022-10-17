@@ -1,9 +1,9 @@
-package exceptions;
+package exception;
 
 public class InputEmptyException extends RuntimeException {
 
     public InputEmptyException(){
-        super("입력값이 유효하지 않습니다. 다시 입력해주세요");
+        super("입력이 되지 않았습니다. 다시 입력해주세요");
     }
 
     public InputEmptyException(String message){
